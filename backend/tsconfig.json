@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    /* Versão de JavaScript de saída */
+    "target": "ES2021",
+
+    /* Sistema de módulos usado (CommonJS é o padrão do Node.js) */
+    "module": "commonjs",
+
+    /* Onde o TypeScript vai procurar os arquivos-fonte */
+    "rootDir": "./src",
+
+    /* Onde o TypeScript vai colocar os arquivos compilados (.js) */
+    "outDir": "./dist",
+
+    /* Necessário para o TypeORM funcionar com decorators (@Entity, @Column, etc.) */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    /* Permite importar módulos CommonJS como se fossem ES Modules (ex: import express from 'express') */
+    "esModuleInterop": true,
+
+    /* Garante que nomes de arquivos importados respeitem exatamente maiúsculas/minúsculas */
+    "forceConsistentCasingInFileNames": true,
+
+    /* Ativa um conjunto rígido de verificações de tipo (boa prática em POO) */
+    "strict": true,
+
+    /* Não permite acessar propriedades que não existem no tipo (mais segurança) */
+    "noImplicitAny": true,
+
+    /* Pula a checagem de tipos dos arquivos de declaração (.d.ts) de bibliotecas, agilizando o build */
+    "skipLibCheck": true,
+
+    /* Permite importar arquivos JSON diretamente */
+    "resolveJsonModule": true,
+
+    /* Gera os arquivos .map para facilitar debug */
+    "sourceMap": true,
+
+    /* Permite usar decorators que retornam metadata (usado pelo TypeORM internamente) */
+    "useDefineForClassFields": false
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
