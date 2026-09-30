@@ -1,0 +1,26 @@
+# Dependências instaladas pelo npm
+node_modules/
+
+# Código JavaScript compilado a partir do TypeScript
+dist/
+
+# Banco de dados SQLite gerado em tempo de execução
+database.sqlite
+*.sqlite
+*.sqlite-journal
+
+# Arquivos de variáveis de ambiente (caso venham a ser usados)
+.env
+.env.local
+
+# Logs
+npm-debug.log*
+*.log
+
+# Arquivos de configuração de editores/IDEs
+.vscode/
+.idea/
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
